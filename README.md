@@ -2,13 +2,14 @@
 
 A quick implementation for an ATTiny 85 a BMP280 sensor and a ssd1306 oled screen
 
-![breadboard](./readme-assets/irl.jpg)
+![oled](./readme-assets/oled.jpg)
+![segment1](./readme-assets/segment2.jpg)
 
 ## Hardware
 
 - ATTiny85
 - BMP280
-- SSD1306
+- SSD1306 / TM1637
 - FTDI programmer
 - Arduino Uno (Optionnal used to flash the ATTiny85)
 
@@ -20,6 +21,8 @@ A quick implementation for an ATTiny 85 a BMP280 sensor and a ssd1306 oled scree
 #include <SoftwareSerial.h>
 #include <TinyWireM.h>
 #include <Tiny4kOLED.h>
+#include "TM1637Display.h" // If using the TM display
+
 ```
 
 ## Wiring
